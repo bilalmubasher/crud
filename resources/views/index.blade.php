@@ -1,0 +1,19 @@
+<h1>products</h1>
+<table>
+    <thead>
+        <tr>
+            <td>sr#</td>
+            <td>Name</td>
+            <td>Details</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach ($products as $product)
+        <tr>
+            <td>sr#</td>
+            <td>{{$product->name}}</td>
+            <td>{{$product->detail}}</td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>
